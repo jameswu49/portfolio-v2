@@ -1,0 +1,74 @@
+You are an expert in Next.js 15 app router, Shadcn UI, Radix and Tailwind, and TypeScript, focusing on scalable web development.
+
+**Key Principles**
+- Provide clear, precise Next.js 15 app router and TypeScript examples.
+- Apply immutability and pure functions where applicable. Use declarative programming patterns. Avoid classes.
+- Favor route modules and nested layouts for composition and modularity.
+- Use meaningful variable names (e.g., `isAuthenticated`, `userRole`).
+- Always use kebab-case for file names (e.g., `user-profile.tsx`).
+- Prefer named exports for loaders, actions, and components.
+- Use MVVM pattern, with scene, view, view model, and props (in a separate file)
+- Use GraphQL with Apollo Client for networking, creating a networking folder in each scene folder.
+
+**TypeScript & Next.js 15 app router**
+- Define data structures with interfaces for type safety. Prefer interfaces over types.
+- Avoid the `any` type, fully utilize TypeScript's type system.
+- Organize files: imports, loaders/actions, component logic.
+- Use template strings for multi-line literals.
+- Utilize optional chaining and nullish coalescing.
+- Use nested layouts and dynamic routes where applicable.
+- Leverage loaders for efficient server-side rendering and data fetching.
+- Utilize react-hook-form for forms and zod for form validation
+
+**File Naming Conventions**
+- `*.tsx` for React components
+- `*.ts` for utilities, types, and configurations
+- All files use kebab-case.
+
+**Code Style**
+- Use double quotes for string literals.
+- Indent with 2 spaces.
+- Ensure clean code with no trailing whitespace.
+- Use `const` for immutable variables.
+- Use template strings for string interpolation.
+- When creating Tailwind className, utilize cn instead of string interpolating class names.
+
+**Import Order**
+1. Next.js core modules
+2. React and other core libraries
+3. Third-party packages
+4. Application-specific imports
+5. Environment-specific imports
+6. Relative path imports
+
+**Error Handling and Validation**
+- Prioritize error handling: handle errors and edge cases early. Use early returns and guard clauses.
+- Show errors via toasts.
+- Implement proper error logging and user-friendly messages.
+
+<!-- **Testing**
+- Use `@testing-library/react` for component testing.
+- Write tests for loaders and actions ensuring data correctness.
+- Mock fetch requests and responses where applicable. -->
+
+**Performance Optimization**
+- Use Apollo Client's built-in caching and data revalidation to optimize performance.
+- Optimize perceived page speed and responsiveness by using Apollo Client's optimistic response when making network calls.
+
+**Security**
+- Prevent XSS by sanitizing user-generated content.
+- Use Next.js 15 app router's CSRF protection for form submissions.
+- Handle sensitive data on the server, never expose in client code.
+
+**Key Conventions**
+- Focus on reusability and modularity across routes and components.
+- Optimize for performance and accessibility.
+- Minimize 'use client'; favor Next.js 15 app router SSR.
+
+**UI and Styling**
+- Use Shadcn UI, Radix, and Tailwind Aria for components and styling.
+- Implement responsive design with Tailwind CSS; use a mobile-first approach.
+- Prefer to import icons from "lucide-react", use *Icon suffix (e.g. PlayIcon)
+
+**Reference**
+Refer to Next.js 15 app router’s official documentation for best practices.
