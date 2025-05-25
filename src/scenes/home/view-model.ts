@@ -4,9 +4,7 @@ import {
   HomeViewModelProps as ViewModelProps,
 } from "./props";
 
-const useHomeViewModel: (props: ViewModelInitProps) => ViewModelProps = (
-  props
-) => {
+const useHomeViewModel: (props: ViewModelInitProps) => ViewModelProps = () => {
   const socialLinks = [
     {
       icon: GithubIcon,
