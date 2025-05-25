@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import Props from "./profile-card-props";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const ProfileCard = ({}: Props) => {
   const socialLinks = [
@@ -24,8 +28,16 @@ const ProfileCard = ({}: Props) => {
     },
   ];
 
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   return (
-    <div className="flex items-center justify-center my-10 xl:justify-start xl:h-screen xl:my-0">
+    <div
+      className={cn(
+        "flex items-center justify-center my-10 xl:justify-start xl:h-screen xl:my-0",
+        !isHome && "hidden xl:flex",
+      )}
+    >
       {/* Container */}
       <div className="border border-white rounded-4xl p-4 text-white w-110 h-200 xl:ml-10">
         {/* Name and Title */}

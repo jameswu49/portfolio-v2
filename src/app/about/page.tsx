@@ -1,7 +1,8 @@
 import React from "react";
+import AboutScene from "@/scenes/about";
 
 const About = () => {
-  return <div>About</div>;
+  return <AboutScene />;
 };
 
 export default About;
