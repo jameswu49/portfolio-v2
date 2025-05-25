@@ -1,9 +1,22 @@
+"use client";
+
 import React from "react";
 import Props from "./navbar-props";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, UserRound } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const Navbar = ({}: Props) => {
+  const pathname = usePathname();
+
+  const getIconColor = (href: string) => {
+    if (pathname === href) {
+      return "text-primary-foreground";
+    }
+    return "text-white";
+  };
+
   const links = [
     {
       icon: HomeIcon,
@@ -11,9 +24,9 @@ const Navbar = ({}: Props) => {
       label: "Home",
     },
     {
-      icon: HomeIcon,
-      href: "/",
-      label: "Home",
+      icon: UserRound,
+      href: "/about",
+      label: "About",
     },
     {
       icon: HomeIcon,
@@ -37,7 +50,10 @@ const Navbar = ({}: Props) => {
       <div className="flex w-full justify-around py-2">
         {links.map((link, index) => (
           <Link key={index} href={link.href}>
-            <link.icon className="size-7" />
+            <link.icon
+              aria-label={link.label}
+              className={cn("size-7", getIconColor(link.href))}
+            />
           </Link>
         ))}
       </div>

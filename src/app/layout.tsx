@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="flex flex-col xl:flex-row justify-center xl:justify-start xl:h-screen">
           <Profile />
-          <div className="relative w-full">
+          <div className="relative w-full xl:ml-20 2xl:mx-20">
             {children}
             <div className="fixed xl:absolute bottom-10 2xl:bottom-20 w-full flex justify-center">
               <Navbar />

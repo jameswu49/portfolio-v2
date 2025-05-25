@@ -1,17 +1,15 @@
 import React from "react";
 import { HomeViewProps as ViewProps } from "./props";
 import { ChevronRight, HouseIcon } from "lucide-react";
+import IconTab from "@/components/custom/icon-tab/icon-tab";
 
 const HomeView = ({ viewModel }: ViewProps) => {
   const {} = viewModel;
 
   return (
-    <div className="xl:pl-20 w-full">
-      <div className="hidden xl:flex border border-gray-500 rounded-4xl w-fit  text-white items-center gap-2 px-4 my-10 py-1 opacity-70">
-        <HouseIcon className="text-white size-5" />
-        Introduction
-      </div>
-      <h1 className="text-white leading-16 text-center text-4xl xl:text-7xl xl:text-left xl:leading-30 2xl:text-8xl">
+    <div className="w-full">
+      <IconTab icon={HouseIcon} label="Introduction" />
+      <h1 className="text-white leading-16 text-center text-4xl xl:text-6xl xl:text-left xl:leading-25 2xl:text-8xl">
         Hello There, I&apos;m{" "}
         <span className="text-primary-foreground">Jimmy</span>,
         <br />
