@@ -13,14 +13,14 @@ const AboutView = ({ viewModel }: ViewProps) => {
         <h1 className="text-white leading-14 text-center text-4xl md:text-6xl xl:text-left md:leading-25 2xl:text-8xl">
           &quot;Software is a great combination between artistry and
           engineering.&quot;
-          <br />
-          <h3 className="text-gray-500 text-2xl italic text-right pr-10 mt-5">
-            - Bill Gates
-          </h3>
         </h1>
+        <br />
+        <h3 className="text-gray-500 text-2xl italic pr-10 text-right">
+          - Bill Gates
+        </h3>
       </div>
 
-      <p className="text-gray-500 text-sm mt-10 md:px-10 md:text-xl xl:px-0 xl:my-16">
+      <p className="text-gray-500 text-sm mt-10 md:px-10 md:text-xl xl:px-0 xl:my-10">
         I&apos;m Jimmy, a web developer with a background in education. My
         journey into tech began with a passion for teaching and a curiosity
         about how web applications can transform the way we learn and interact.
@@ -34,7 +34,7 @@ const AboutView = ({ viewModel }: ViewProps) => {
         developed as a teacher now shape the way I build intuitive, user-focused
         experiences. My teaching roots give me a unique lens and creative
         approach to development—let&apos;s connect and build something
-        meaningful together.
+        meaningful together!
       </p>
     </div>
   );
