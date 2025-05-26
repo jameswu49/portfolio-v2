@@ -6,6 +6,7 @@ import {
   BoxesIcon,
   FolderIcon,
   HomeIcon,
+  MailIcon,
   MessageSquareQuoteIcon,
   UserRound,
 } from "lucide-react";
@@ -49,11 +50,16 @@ const Navbar = ({}: Props) => {
       href: "/testimonials",
       label: "Testimonials",
     },
+    {
+      icon: MailIcon,
+      href: "/contact",
+      label: "Contact",
+    },
   ];
 
   return (
-    <div className="text-white border rounded-4xl flex w-3/4 bg-black xl:w-2/4">
-      <div className="flex w-full justify-around py-2">
+    <div className="text-white border rounded-4xl flex w-[85%] bg-black xl:w-2/4">
+      <div className="flex w-full justify-evenly py-2">
         {links.map((link, index) => (
           <Link key={index} href={link.href}>
             <link.icon

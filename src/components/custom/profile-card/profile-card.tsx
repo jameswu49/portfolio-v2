@@ -39,7 +39,7 @@ const ProfileCard = ({}: Props) => {
       )}
     >
       {/* Container */}
-      <div className="border border-white rounded-4xl p-4 text-white w-110 h-200 xl:ml-10">
+      <div className="border border-white rounded-4xl p-4 text-white w-110 h-[90dvh] xl:ml-10 2xl:h-200">
         {/* Name and Title */}
         <div className="pl-10 leading-5 my-5">
           <h1 className="text-2xl font-bold">Jimmy Wu</h1>
