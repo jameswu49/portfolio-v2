@@ -33,11 +33,11 @@ const ProjectsView = ({ viewModel }: ViewProps) => {
       <h1 className="text-center text-primary-foreground text-5xl font-bold mb-10 xl:text-start">
         <span className="text-white">Featured</span> Projects
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 xl:mr-20">
         {projectLinks.map((element, index) => (
           <div
             key={index}
-            className="relative group mx-5 xl:mx-0"
+            className="relative group mx-5 xl:mx-0 overflow-hidden"
             onClick={() => handleClick(index)}
           >
             <Image
