@@ -2,7 +2,13 @@
 
 import React from "react";
 import Props from "./navbar-props";
-import { BoxesIcon, FolderIcon, HomeIcon, UserRound } from "lucide-react";
+import {
+  BoxesIcon,
+  FolderIcon,
+  HomeIcon,
+  MessageSquareQuoteIcon,
+  UserRound,
+} from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -39,9 +45,9 @@ const Navbar = ({}: Props) => {
       label: "Projects",
     },
     {
-      icon: HomeIcon,
-      href: "/",
-      label: "Home",
+      icon: MessageSquareQuoteIcon,
+      href: "/testimonials",
+      label: "Testimonials",
     },
   ];
 
