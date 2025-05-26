@@ -5,7 +5,7 @@ import {
 
 const useSkillsViewModel: (
   props: ViewModelInitProps,
-) => ViewModelProps = (props) => {
+) => ViewModelProps = () => {
   return {};
 };
 
