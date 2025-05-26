@@ -22,7 +22,7 @@ const HomeView = ({ viewModel }: ViewProps) => {
         <h3>I love coding!</h3>
       </div>
 
-      <div className="flex justify-center mb-30 xl:justify-end xl:mb-0">
+      <div className="flex justify-center xl:justify-end">
         <ChevronRight className="text-primary-foreground size-30 mt-10 transition-transform duration-300 hover:-translate-y-2 cursor-pointer" />
       </div>
     </div>
