@@ -10,7 +10,7 @@ const AboutView = ({ viewModel }: ViewProps) => {
     <div className="text-white px-5 md:px-20 xl:mb-0 xl:pl-0">
       <IconTab icon={UserRound} label="About" />
       <div>
-        <h1 className="text-white leading-14 text-center text-4xl md:text-6xl xl:text-left md:leading-25 2xl:text-8xl">
+        <h1 className="text-white leading-14 text-center font-extrabold text-4xl md:text-6xl xl:text-left md:leading-20 2xl:leading-25 2xl:text-8xl">
           &quot;Software is a great combination between artistry and
           engineering.&quot;
         </h1>

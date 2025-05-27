@@ -10,7 +10,7 @@ const TestimonialsView = ({ viewModel }: ViewProps) => {
   return (
     <div>
       <IconTab icon={MessageSquareQuoteIcon} label="Testimonials" />
-      <h1 className=" text-center text-primary-foreground text-5xl font-bold mb-10 xl:text-start">
+      <h1 className=" text-center text-white text-5xl font-bold mb-10 xl:text-start">
         Testimonials
       </h1>
       <div className="border border-white rounded-2xl p-4 mx-auto md:w-[90%] xl:mx-0 2xl:w-3/4">
