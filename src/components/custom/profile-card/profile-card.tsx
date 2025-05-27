@@ -67,13 +67,13 @@ const ProfileCard = ({}: Props) => {
         <div className="space-y-3 px-5">
           <h2 className="text-white text-xl">jameswu49@gmail.com</h2>
           <h3 className="text-white text-2xl pl-7">California, USA</h3>
-          <p className="text-white text-lg opacity-50 mt-20">
+          <p className="text-white text-lg opacity-50 my-15 2xl:my-20">
             Let&apos;s build something great together!
           </p>
         </div>
 
         {/* Email Button */}
-        <div className="flex justify-center mt-10 bottom-10 left-0 w-full 2xl:mt-20">
+        <div className="flex justify-center  w-full 2xl:mt-20">
           <Link href="/contact">
             <Button className="bg-primary-foreground text-black p-6 rounded-xl cursor-pointer">
               <div className="flex gap-3 px-4 items-center text-xl font-mono tracking-0">
