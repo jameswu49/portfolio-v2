@@ -58,7 +58,7 @@ const ContactView = ({ viewModel }: ViewProps) => {
 
   return (
     <div className="text-white">
-      <IconTab icon={MailIcon} label="Contact" />
+      <IconTab icon={MailIcon} label="Contact Me" />
       <div className="space-y-10 xl:space-y-20">
         <div>
           <h1 className="text-5xl font-bold text-center xl:text-start">
@@ -150,7 +150,7 @@ const ContactView = ({ viewModel }: ViewProps) => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full md:w-auto bg-primary-foreground cursor-pointer text-black hover:bg-primary-foreground/90 rounded-full text-lg px-4"
+                className="w-full md:w-auto bg-primary-foreground cursor-pointer text-black font-light hover:bg-primary-foreground/90 rounded-full text-lg px-4"
               >
                 {isSubmitting ? "Sending..." : "SEND"}
               </Button>

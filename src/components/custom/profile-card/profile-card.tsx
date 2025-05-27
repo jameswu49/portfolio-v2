@@ -13,17 +13,17 @@ const ProfileCard = ({}: Props) => {
   const socialLinks = [
     {
       icon: GithubIcon,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/jameswu49",
       label: "GitHub Profile",
     },
     {
       icon: LinkedinIcon,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://linkedin.com/in/jameswu49",
       label: "LinkedIn Profile",
     },
     {
       icon: MailIcon,
-      href: "mailto:your.email@example.com",
+      href: "mailto:jameswu49@gmail.com",
       label: "Email",
     },
   ];
@@ -39,7 +39,7 @@ const ProfileCard = ({}: Props) => {
       )}
     >
       {/* Container */}
-      <div className="border border-white rounded-4xl p-4 text-white w-110 h-[90dvh] xl:ml-10 2xl:h-200">
+      <div className="border border-white rounded-4xl p-4 relative text-white w-110 h-180 xl:h-[90dvh] xl:ml-10 2xl:h-200 overflow-auto">
         {/* Name and Title */}
         <div className="pl-10 leading-5 my-5">
           <h1 className="text-2xl font-bold">Jimmy Wu</h1>
@@ -48,32 +48,39 @@ const ProfileCard = ({}: Props) => {
 
         {/* Profile Image and Email */}
         <div className="flex items-center justify-between px-5 my-10">
-          <div className="space-y-8">
-            <Image
-              src="/profile.jpg"
-              alt="Jimmy Wu"
-              width={500}
-              height={500}
-              className="rounded-xl size-60 object-cover object-top"
-            />
-            <h2 className="text-white text-xl">jameswu49@gmail.com</h2>
-          </div>
+          <Image
+            src="/profile.jpg"
+            alt="Jimmy Wu"
+            width={500}
+            height={500}
+            className="rounded-xl size-60 object-cover object-top"
+          />
 
           {/* Social Links */}
-          <div className="border-r-3 border-primary pr-4 space-y-4">
+          <div className="border-r-3 border-primary px-6 space-y-4">
             {socialLinks.map((link, index) => (
               <ProfileIcons key={index} link={link} />
             ))}
           </div>
         </div>
 
+        <div className="space-y-3 px-5">
+          <h2 className="text-white text-xl">jameswu49@gmail.com</h2>
+          <h3 className="text-white text-2xl pl-7">California, USA</h3>
+          <p className="text-white text-lg opacity-50 mt-20">
+            Let&apos;s build something great together!
+          </p>
+        </div>
+
         {/* Email Button */}
-        <div className="flex justify-center">
-          <Button className="bg-primary-foreground text-black p-6 rounded-xl">
-            <div className="flex gap-3 px-4 items-center text-xl">
-              <MailIcon className="size-6" /> Contact Me
-            </div>
-          </Button>
+        <div className="flex justify-center bottom-10 left-0 w-full xl:mt-10 2xl:mt-20">
+          <Link href="/contact">
+            <Button className="bg-primary-foreground text-black p-6 rounded-xl cursor-pointer">
+              <div className="flex gap-3 px-4 items-center text-xl font-mono tracking-0">
+                <MailIcon className="size-6" /> Contact Me
+              </div>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
@@ -89,7 +96,7 @@ const ProfileIcons = ({
 }) => {
   const Icon = link.icon;
   return (
-    <div className="rounded-full border-primary border size-10 flex items-center justify-center p-6">
+    <div className="rounded-full border-primary border size-10 flex items-center justify-center p-6 cursor-pointer">
       <Link
         href={link.href}
         target="_blank"

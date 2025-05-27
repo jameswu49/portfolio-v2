@@ -58,7 +58,7 @@ const Navbar = ({}: Props) => {
   ];
 
   return (
-    <div className="text-white border rounded-4xl flex w-[85%] bg-black xl:w-2/4">
+    <div className="text-white border rounded-4xl flex w-[85%] bg-[#1C1C1C] xl:w-2/4">
       <div className="flex w-full justify-evenly py-2">
         {links.map((link, index) => (
           <Link key={index} href={link.href}>
