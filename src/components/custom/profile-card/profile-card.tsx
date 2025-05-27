@@ -73,7 +73,7 @@ const ProfileCard = ({}: Props) => {
         </div>
 
         {/* Email Button */}
-        <div className="flex justify-center bottom-10 left-0 w-full xl:mt-10 2xl:mt-20">
+        <div className="flex justify-center mt-10 bottom-10 left-0 w-full 2xl:mt-20">
           <Link href="/contact">
             <Button className="bg-primary-foreground text-black p-6 rounded-xl cursor-pointer">
               <div className="flex gap-3 px-4 items-center text-xl font-mono tracking-0">
