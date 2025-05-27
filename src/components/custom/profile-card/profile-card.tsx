@@ -39,7 +39,7 @@ const ProfileCard = ({}: Props) => {
       )}
     >
       {/* Container */}
-      <div className="border border-white rounded-4xl p-4 relative text-white w-110 h-180 xl:h-[90dvh] xl:ml-10 2xl:h-200">
+      <div className="border border-white rounded-4xl p-4 relative text-white w-110 h-180 xl:h-[90dvh] xl:ml-10 2xl:h-200 overflow-auto">
         {/* Name and Title */}
         <div className="pl-10 leading-5 my-5">
           <h1 className="text-2xl font-bold">Jimmy Wu</h1>
@@ -73,7 +73,7 @@ const ProfileCard = ({}: Props) => {
         </div>
 
         {/* Email Button */}
-        <div className="flex justify-center absolute bottom-10 left-0 w-full">
+        <div className="flex justify-center bottom-10 left-0 w-full xl:mt-10 2xl:mt-20">
           <Link href="/contact">
             <Button className="bg-primary-foreground text-black p-6 rounded-xl cursor-pointer">
               <div className="flex gap-3 px-4 items-center text-xl font-mono tracking-0">
