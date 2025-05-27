@@ -9,7 +9,7 @@ const HomeView = ({ viewModel }: ViewProps) => {
   return (
     <div className="w-full">
       <IconTab icon={HouseIcon} label="Introduction" />
-      <h1 className="text-white leading-16 text-center text-4xl xl:text-6xl xl:text-left xl:leading-25 2xl:text-8xl">
+      <h1 className="text-white leading-16 text-center text-4xl xl:text-6xl xl:text-left xl:leading-25 2xl:leading-30 2xl:text-8xl">
         Hey There, I&apos;m{" "}
         <span className="text-primary-foreground">Jimmy</span>,
         <br />
