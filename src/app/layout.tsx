@@ -34,7 +34,7 @@ export default function RootLayout({
           <Profile />
           <div className="relative w-full xl:ml-20 2xl:mx-20">
             {children}
-            <div className="fixed xl:absolute bottom-10 w-full flex justify-center">
+            <div className="mt-20 xl:absolute bottom-10 w-full flex justify-center">
               <Navbar />
             </div>
           </div>
