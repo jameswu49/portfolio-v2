@@ -6,7 +6,7 @@ export interface ProjectLink {
   type: string;
   url: string;
   description: string;
-  repo: string;
+  repo?: string;
 }
 
 export interface ProjectsSceneProps {}

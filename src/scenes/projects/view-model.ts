@@ -9,9 +9,17 @@ const useProjectsViewModel: (
 ) => ViewModelProps = () => {
   const projectLinks: ProjectLink[] = [
     {
+      name: "Invoice Goat",
+      image: "/invoice-goat.png",
+      type: "React, TypeScript, Next 14, Tailwind, Shadcn UI, GraphQL, NestJS, PostgreSQL, Prisma",
+      description:
+        "An Invoice Generator that allows users to create and manage invoices.",
+      url: "https://invoicegoat.com/",
+    },
+    {
       name: "Supreme E-Commerce",
       image: "/supreme.png",
-      type: "React, Next 13, Tailwind",
+      type: "React, TypeScript, Next 13, Tailwind",
       description:
         "An E-commerce site showcasing various products from the Supreme Website.",
       url: "https://supreme-commerce.vercel.app/",
@@ -25,15 +33,15 @@ const useProjectsViewModel: (
       url: "https://olive-garden-fanpage.vercel.app/",
       repo: "https://github.com/joseph-w-valdez/olive-garden-fanpage",
     },
-    {
-      name: "Muze",
-      image: "/muze.png",
-      type: "Html, CSS, Javascript",
-      description:
-        "A music site that utilizes the openwhyd api to allow users to search for songs and artists.",
-      url: "https://jameswu49.github.io/Muze/",
-      repo: "https://github.com/jameswu49/Muze",
-    },
+    // {
+    //   name: "Muze",
+    //   image: "/muze.png",
+    //   type: "Html, CSS, Javascript",
+    //   description:
+    //     "A music site that utilizes the openwhyd api to allow users to search for songs and artists.",
+    //   url: "https://jameswu49.github.io/Muze/",
+    //   repo: "https://github.com/jameswu49/Muze",
+    // },
   ];
   return { projectLinks };
 };

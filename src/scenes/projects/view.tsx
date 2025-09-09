@@ -37,7 +37,7 @@ const ProjectsView = ({ viewModel }: ViewProps) => {
         {projectLinks.map((element, index) => (
           <div
             key={index}
-            className="relative group mx-5 xl:mx-0 overflow-hidden"
+            className="relative group mx-5 xl:mx-0 overflow-hidden text-center"
             onClick={() => handleClick(index)}
           >
             <Image
@@ -80,13 +80,15 @@ const ProjectsView = ({ viewModel }: ViewProps) => {
                   >
                     <LinkIcon className="cursor-pointer hover:scale-110 lg:text-3xl text-white" />
                   </a>
-                  <a
-                    href={element.repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GithubIcon className="cursor-pointer hover:scale-110 lg:text-3xl text-white" />
-                  </a>
+                  {element.repo && (
+                    <a
+                      href={element.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <GithubIcon className="cursor-pointer hover:scale-110 lg:text-3xl text-white" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
