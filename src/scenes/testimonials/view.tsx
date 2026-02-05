@@ -58,9 +58,7 @@ const TestimonialsView = ({ viewModel }: ViewProps) => {
           <br />
           <br />
           As a former Director of Engineering at Google, I am confident that
-          Jimmy will be an asset to any team he joins. questions. As a former
-          Director of Engineering at Google, I am confident that Jimmy will be
-          an asset to any team he joins.
+          Jimmy will be an asset to any team he joins. questions.
         </p>
       </div>
     </div>
